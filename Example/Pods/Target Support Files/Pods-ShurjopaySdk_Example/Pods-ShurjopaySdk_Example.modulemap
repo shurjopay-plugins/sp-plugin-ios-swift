@@ -1,0 +1,6 @@
+framework module Pods_ShurjopaySdk_Example {
+  umbrella header "Pods-ShurjopaySdk_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

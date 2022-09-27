@@ -1,0 +1,52 @@
+{
+  "_buildCommand2" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : false,
+    "targets" : null
+  },
+  "buildCommand" : "build",
+  "configuredTargets" : [
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e9827a1b717239c00af5c96e26db8225cca"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e988482ac9940b44a527bcee6f03a4fcce0"
+    },
+    {
+      "guid" : "bfdfe7dc352907fc980b868725387e98d339678c27addafa2cb7c64b35850673"
+    }
+  ],
+  "containerPath" : "/Users/macbookpro/Documents/shurjoMukhi Limited Projects/All Project/Office SM Swift shurjoPay SDK V2/Example/Pods/Pods.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "build",
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "",
+      "buildProductsPath" : "",
+      "derivedDataPath" : "/Users/macbookpro/Library/Developer/Xcode/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/macbookpro/Library/Developer/Xcode/DerivedData/Pods-beletggrpjwraceydtwjisvaqcpy/Index/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/macbookpro/Library/Developer/Xcode/DerivedData/Pods-beletggrpjwraceydtwjisvaqcpy/Index/PrecompiledHeaders",
+      "pchPath" : ""
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "schemeCommand2" : "launch",
+  "shouldCollectMetrics" : false,
+  "showNonLoggedProgress" : true,
+  "useDryRun" : true,
+  "useImplicitDependencies" : false,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : false
+}

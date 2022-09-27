@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+ShurjopaySdk in Pods, no dependencies
+Pods-ShurjopaySdk_Example in Pods, depends on:
+ShurjopaySdk in Pods (explicit)
+Pods-ShurjopaySdk_Tests in Pods, depends on:
+Pods-ShurjopaySdk_Example in Pods (explicit)

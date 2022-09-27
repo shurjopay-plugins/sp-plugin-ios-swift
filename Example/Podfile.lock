@@ -1,0 +1,16 @@
+PODS:
+  - ShurjopaySdk (0.1.0)
+
+DEPENDENCIES:
+  - ShurjopaySdk (from `../`)
+
+EXTERNAL SOURCES:
+  ShurjopaySdk:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ShurjopaySdk: 7a32ec80fc53e52c7b33db52207216068fb918fe
+
+PODFILE CHECKSUM: 0e1183a40b6331c9279e812faf07a199e5537959
+
+COCOAPODS: 1.11.3
