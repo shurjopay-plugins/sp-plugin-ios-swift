@@ -58,11 +58,13 @@ class ShurjoPayViewController: UIViewController {
 extension ShurjoPayViewController: WKNavigationDelegate, UIWebViewDelegate {
     func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
         let url = webView.url?.absoluteString
-        if url!.containsIgnoringCase(find: "cancel_url") {
+        if url!.containsIgnoringCase(find: requestData?.cancelUrl) {
             self.dismiss(animated: true, completion: nil)
+            return
         }
-        if url!.containsIgnoringCase(find: "return_url") && url!.containsIgnoringCase(find: "order_id") {
+        if url!.containsIgnoringCase(find: requestData?.returnUrl) && url!.containsIgnoringCase(find: "order_id") {
             verifyPayment(sdkType: sdkType!)
+            return
         }
     }
     func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: Error) {
