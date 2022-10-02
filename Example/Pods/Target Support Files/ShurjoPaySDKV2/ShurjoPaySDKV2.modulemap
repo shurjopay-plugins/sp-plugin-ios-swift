@@ -1,6 +1,0 @@
-framework module ShurjoPaySDKV2 {
-  umbrella header "ShurjoPaySDKV2-umbrella.h"
-
-  export *
-  module * { export * }
-}
