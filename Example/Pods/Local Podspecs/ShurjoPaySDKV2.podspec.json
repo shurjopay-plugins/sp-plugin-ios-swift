@@ -1,0 +1,22 @@
+{
+  "name": "ShurjoPaySDKV2",
+  "version": "0.1.0",
+  "summary": "A short description of ShurjoPaySDKV2.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Rz Rasel/ShurjoPaySDKV2",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Rz Rasel": "shurjomukhidev@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Rz Rasel/ShurjoPaySDKV2.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "ShurjoPaySDKV2/Classes/**/*"
+}

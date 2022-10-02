@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'ShurjoPaySDKV2_Example' do
+  pod 'ShurjoPaySDKV2', :path => '../'
+
+  target 'ShurjoPaySDKV2_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
