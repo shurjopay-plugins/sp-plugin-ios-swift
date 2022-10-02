@@ -1,16 +1,16 @@
 PODS:
-  - ShurjopaySdk (0.1.0)
+  - ShurjoPaySDKV2 (0.1.0)
 
 DEPENDENCIES:
-  - ShurjopaySdk (from `../`)
+  - ShurjoPaySDKV2 (from `../`)
 
 EXTERNAL SOURCES:
-  ShurjopaySdk:
+  ShurjoPaySDKV2:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ShurjopaySdk: 7a32ec80fc53e52c7b33db52207216068fb918fe
+  ShurjoPaySDKV2: c4f23ef6186b8b7e9ad0076cd9c76d84a00d386c
 
-PODFILE CHECKSUM: 0e1183a40b6331c9279e812faf07a199e5537959
+PODFILE CHECKSUM: 00e7ed493b46ab32dc3a890ee9310332dc291fb2
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.8.4

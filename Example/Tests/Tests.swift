@@ -1,5 +1,5 @@
 import XCTest
-import ShurjopaySdk
+import ShurjoPaySDKV2
 
 class Tests: XCTestCase {
     
