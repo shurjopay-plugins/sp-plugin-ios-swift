@@ -100,7 +100,7 @@ func onFailed(message: ErrorSuccess) {
 # Want to see shurjoPay in action?
 Run the JUnit test to see shurjopay plugin in action. These tests will run on selenium browser and will provide the complete experience. Just download source and run the command ```mvnw.cmd test``` in Windows and ```./mvnw test``` in Linux from plugin root path.
 ## References
-1. [Spring example application](https://github.com/shurjopay-plugins/sp-plugin-usage-examples/tree/main/spring-app-spring-plugin) showing usage of the spring plugin.
+1. [Spring example application](https://github.com/shurjopay-plugins/ios-swift-example) showing usage of the iOS swift plugin.
 2. [Sample applications and projects](https://github.com/shurjopay-plugins/sp-plugin-usage-examples) in many different languages and frameworks showing shurjopay integration.
 3. [shurjoPay Postman site](https://documenter.getpostman.com/view/6335853/U16dS8ig) illustrating the request and response flow using the sandbox system.
 4. [shurjopay Plugins](https://github.com/shurjopay-plugins) home page on github
@@ -109,15 +109,3 @@ This code is under the [MIT open source License](https://github.com/shurjopay-pl
 #### Please [contact](https://shurjopay.com.bd/#contacts) with shurjoPay team for more detail!
 <hr>
 Copyright ©️2022 Shurjomukhi Limited.
-
-# ShurjoPaySDK V2
-
-### Open and run shurjoPay SDK V2 project
-- Open Xcode
-- Go to "Example" directory
-- Open "ShurjoPaySDKV2.xcworkspace" in Xcode
-- Select device in Xcode
-- Click "run" button in Xcode
-
-## Authors
-- [Rz Rasel](https://github.com/rzrasel)
