@@ -15,18 +15,22 @@ Also reduces many of the things that you had to do manually:
 - JSON serialization and deserialization.
 - Authentication during initiating and verifying of payments.
 ## Audience
-This document is intended for the technical personnel of merchants and service providers who wants to integrate our online payment gateway using spring plugin provided by _**shurjoMukhi Limited**_.
+This document is intended for the technical personnel of merchants and service providers who wants to integrate our online payment gateway using iOS swift plugin provided by _**shurjoMukhi Limited**_.
 ## How to use this shurjoPay plugin
 To integrate the shurjoPay Payment Gateway in your iOS swift project do the following tasks sequentially.
 #### Step 1: Add dependency into your iOS swift project
 **Pod**
-```pod
-<dependency>
-  <groupId>bd.com.shurjomukhi</groupId>
-  <artifactId>sp-plugin-spring</artifactId>
-  <version>0.1.0</version>
-</dependency>
-```
+
+1. Close the Xcode project
+1. Open the terminal
+1. cd /your project path
+1. ``` pod init ```
+1. ``` pod "ShurjoPaySDKV2", '~> 1.1.0 ```
+1. ``` pod install ```
+
+
+
+
 **Gradle**
 ```gradle
 implementation 'bd.com.shurjomukhi:sp-plugin-spring:0.1.0'
