@@ -63,15 +63,40 @@ To integrate the shurjoPay Payment Gateway in your iOS swift project do the foll
 
 	// Calls first method to initiate a payment
 	shurjopaySdk = ShurjopaySdk(onSuccess: onSuccess, onFailed: onFailed)
- ```
-- Returns [_POJO_](https://github.com/shurjopay-plugins/sp-plugin-java/blob/main/src/main/java/com/shurjomukhi/model/PaymentRes.java) corresponding this [_JSON_](https://github.com/shurjopay-plugins/sp-plugin-spring/blob/main/src/test/resources/sample-msg/payment-res.json)
 
-#### Step 4: Payment verification can be done after each transaction with shurjopay transaction id.
-- Call verify method
- ```java
-	shurjopay.verifyPayment(:=spTxnId)
+    shurjopaySdk?.makePayment(
+        uiProperty:     UIProperty(viewController: self,
+                                   storyboardName: "Main",
+                                   identifier: "sPayViewController"),
+        sdkType:        AppConstants.SDK_TYPE_SANDBOX,
+        requestData:    requestData
+    )
  ```
-- Returns [_POJO_](https://github.com/shurjopay-plugins/sp-plugin-java/blob/develop/src/main/java/com/shurjomukhi/model/VerifiedPayment.java) corresponding this [_JSON_](https://github.com/shurjopay-plugins/sp-plugin-spring/blob/develop/src/test/resources/sample-msg/verification-res.json)
+
+#### Step 3: Payment verification can be done after each transaction with shurjopay transaction id.
+- Call success method
+ ```swift
+func onSuccess(transactionData: TransactionData?, message: ErrorSuccess) {
+    if(message.esType == ErrorSuccess.ESType.INTERNET_SUCCESS) {
+        print("DEBUG_LOG_PRINT: INTERNET SUCCESS \(String(describing: message.message))")
+    } else {
+        print("DEBUG_LOG_PRINT: HTTP SUCCESS TRANSACTION_DATA: \(String(describing: transactionData)) \(String(describing: message.message))")
+    }
+}
+ ```
+
+ - Call falid method
+  ```swift
+func onFailed(message: ErrorSuccess) {
+    if(message.esType == ErrorSuccess.ESType.INTERNET_ERROR) {
+        print("DEBUG_LOG_PRINT: INTERNET ERROR \(String(describing: message.message))")
+        //alertService.alert(viewController: self, message: message.message!)
+    } else {
+        print("DEBUG_LOG_PRINT: HTTP ERROR \(String(describing: message.message))")
+    }
+}
+  ```
+
 # Want to see shurjoPay in action?
 Run the JUnit test to see shurjopay plugin in action. These tests will run on selenium browser and will provide the complete experience. Just download source and run the command ```mvnw.cmd test``` in Windows and ```./mvnw test``` in Linux from plugin root path.
 ## References
