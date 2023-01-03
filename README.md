@@ -1,13 +1,13 @@
-# ![image](https://user-images.githubusercontent.com/57352037/155895117-523cfb9e-d895-47bf-a962-2bcdda49ad66.png) iOS Plugin
+# ![image](https://user-images.githubusercontent.com/57352037/155895117-523cfb9e-d895-47bf-a962-2bcdda49ad66.png) iOS swift Plugin
 
-Official shurjoPay Spring plugin for merchants or service providers to connect with [**_shurjoPay_**](https://shurjopay.com.bd) Payment Gateway ``` v2.1 ``` developed and maintained by [_**ShurjoMukhi Limited**_](https://shurjomukhi.com.bd).
+Official shurjoPay iOS swift plugin for merchants or service providers to connect with [**_shurjoPay_**](https://shurjopay.com.bd) Payment Gateway ``` v1.1.0 ``` developed and maintained by [_**ShurjoMukhi Limited**_](https://shurjomukhi.com.bd).
 
-This plugin can be used with spring application.
-Also it makes easy for developers to integrate with shurjoPay ``` v2.1 ``` with calling three methods only:
+This plugin can be used with iOS swift application.
+Also it makes easy for developers to integrate with shurjoPay ``` v1.1.0 ``` with calling three methods only:
 
 1. **makePayment**: create and send payment request
-1. **verifyPayment**: verify payment status at shurjoPay
-1. **paymentStatus**: Check payment details and status
+1. **onSuccess**: successfully payment completed at shurjoPay
+1. **onFailed**: failed payment in shurjoPay
 
 Also reduces many of the things that you had to do manually:
 
@@ -17,10 +17,10 @@ Also reduces many of the things that you had to do manually:
 ## Audience
 This document is intended for the technical personnel of merchants and service providers who wants to integrate our online payment gateway using spring plugin provided by _**shurjoMukhi Limited**_.
 ## How to use this shurjoPay plugin
-To integrate the shurjoPay Payment Gateway in your spring project do the following tasks sequentially.
-#### Step 1: Add dependency into your spring project
-**Maven**
-```xml
+To integrate the shurjoPay Payment Gateway in your iOS swift project do the following tasks sequentially.
+#### Step 1: Add dependency into your iOS swift project
+**Pod**
+```pod
 <dependency>
   <groupId>bd.com.shurjomukhi</groupId>
   <artifactId>sp-plugin-spring</artifactId>
